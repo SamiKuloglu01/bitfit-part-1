@@ -1,4 +1,4 @@
-# Android Project 5 - BitFit
+# Android Project 5 - BitFit Part 1
 
 Submitted by: Sami Kuloglu
 
