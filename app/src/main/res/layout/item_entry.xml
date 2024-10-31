@@ -1,0 +1,65 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="?attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Entry Date -->
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: ---"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Sleep Hours -->
+        <TextView
+            android:id="@+id/sleepText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slept: -- hours"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Mood Rating -->
+        <TextView
+            android:id="@+id/moodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feeling: --/10"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Notes -->
+        <TextView
+            android:id="@+id/notesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No notes"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Photo Thumbnail (if available) -->
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            android:contentDescription="Photo thumbnail"
+            android:visibility="gone" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
